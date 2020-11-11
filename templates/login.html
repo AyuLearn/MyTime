@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - MyTime</title>
+    <link rel="stylesheet" href="/static/bootstrap/css/bootstrap.min.css">
+    <script src="/static/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/jquery/jquery.min.js"></script>
+</head>
+
+<body>
+    <h2 class="text-center my-3"><u>Login Here</u></h2>
+<div class="container my-3">
+    <form class="my-3" action="/login" method="post">
+    {% csrf_token %}
+        <div class="form-group">
+            <label for="loginusername">Username</label>
+            <input type="text" class="form-control" name="loginusername" id="loginusername" aria-describedby="loginusername" placeholder="Username">
+        </div>
+        <div class="form-group">
+            <label for="loginpass">Password</label>
+            <input type="password" class="form-control" name="loginpass" id="loginpass" placeholder="Password">
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp - MyTime</title>
+    <link rel="stylesheet" href="/static/bootstrap/css/bootstrap.min.css">
+    <script src="/static/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/jquery/jquery.min.js"></script>
+</head>
+
+<body>
+    <h2 class="text-center my-3"><u>SignUp Here</u><br><br><a href="/login">Login</a></h2>
+<div class="container my-3">
+    <form class="my-3" action="/" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" class="form-control" name="username" id="username" aria-describedby="username" placeholder="Username">
+        </div>
+        <div class="form-group">
+            <label for="fname">First Name</label>
+            <input type="text" class="form-control" name="fname" id="fname" aria-describedby="fname" placeholder="First Name">
+        </div>
+        <div class="form-group">
+            <label for="lname">Last Name</label>
+            <input type="text" class="form-control" name="lname" id="lname" aria-describedby="lname" placeholder="Last Name">
+        </div>
+        <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" name="email" id="email" aria-describedby="email" placeholder="Email Address">
+        </div>
+        <div class="form-group">
+            <label for="pic">Profile Picture</label><br>
+            <input type="file" name="pic" id="pic">
+        </div>
+        <div class="form-group">
+            <label for="pass1">Password</label>
+            <input type="password" class="form-control" name="pass1" id="pass1" placeholder="Password">
+        </div>
+        <div class="form-group">
+            <label for="pass2">Confirm Password</label>
+            <input type="password" class="form-control" name="pass2" id="pass2" placeholder="Confirm Password">
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+</div>
+</body>
+
+</html>

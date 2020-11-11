@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel - MyTime</title>
+    <link rel="stylesheet" href="/static/bootstrap/css/bootstrap.min.css">
+    <script src="/static/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/jquery/jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <h3 class="text-center"><u>Your Details</u></h3>
+    <h4 class="my-3">Username : {{request.user.username}}</h4>
+    <h4 class="my-3">Name : {{request.user.first_name}} {{request.user.last_name}}</h4>
+    <h4 class="my-3">Email : {{request.user.email}}</h4>
+    <h4 class="my-3">Profile Pic : {{request.user.profile_pic.url}}</h4>
+</div>
+</body>
+</html>
