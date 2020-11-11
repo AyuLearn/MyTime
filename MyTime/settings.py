@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '_9eqo&*fwo4^w%=43x(+*&9^$a8@0h4#vc8)&-%j)p*p3s7#yj'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['mytime-django.herokuapp.com']
 
 
 # Application definition
